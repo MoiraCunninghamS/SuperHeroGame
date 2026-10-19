@@ -7,9 +7,9 @@ public class Superhero {
 
   // TODO #1: Add missing constructors. Note that the life attribute should default to true and the weaponStrength attribute should default to 0.
 public Superhero(){
-  name = "unkown";
-  costume = "unkown";
-  weapon = "unkown";
+  name = "no name";
+  costume = "t shirt";
+  weapon = "fist";
   life = true;
   weaponStrength = 0;
 }
@@ -42,6 +42,9 @@ public Superhero(String n, String c, String w, int s){
     }else{
       System.out.println("It is a tie");
     }
+  }
+  public void specialAttack(){
+    
   }
 
   
