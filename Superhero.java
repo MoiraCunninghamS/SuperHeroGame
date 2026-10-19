@@ -18,11 +18,30 @@ public Superhero(String n, String c, String w){
   costume = c;
   weapon = w;
   life = true;
-  weaponStrength = 0;
+  weaponStrength = (int) (Math.random() * 10);
+}
+public Superhero(String n, String c, String w, int s){
+  name = n;
+  costume = c;
+  weapon = w;
+  life = true;
+  weaponStrength = s;
 }
   // TODO #2: Add missing methods.
   public void loseLife(){
     life = false;
+  }
+
+  public static void superHeroFight(Superhero super1, Superhero super2){
+    if(super1.weaponStrength > super2.weaponStrength){
+      System.out.println("The winner is " + super1.name);
+      super2.loseLife();
+    }else if(super1.weaponStrength < super2.weaponStrength){
+      System.out.println("The winner is " + super2.name);
+      super1.loseLife();
+    }else{
+      System.out.println("It is a tie");
+    }
   }
 
   

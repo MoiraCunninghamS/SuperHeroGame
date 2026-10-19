@@ -8,10 +8,11 @@ public class Main {
      */
     Superhero spiderman1 = new Superhero("Spiderman", "Red suit", "Super Web");
     System.out.println(spiderman1);
-    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength");
-    batman1.loseLife();
+    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength, 8");
     System.out.println(batman1);
 
+    //Superheros Fight
+    Superhero.superHeroFight(batman1, spiderman1);
   }
 
 }
