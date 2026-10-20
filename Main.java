@@ -13,6 +13,15 @@ public class Main {
 
     //Superheros Fight
     Superhero.superHeroFight(batman1, spiderman1);
+    System.out.println("");
+
+    //task 3
+    Superhero batman = new Superhero("Batman", "Batsuit","Batarang");
+    Superhero spiderman = new Superhero("Spiderman", "Redsuit","Superweb");
+    System.out.println(batman);
+    System.out.println("");
+    System.out.println(spiderman);
+    
   }
 
 }

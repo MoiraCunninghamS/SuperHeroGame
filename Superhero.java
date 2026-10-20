@@ -43,11 +43,17 @@ public Superhero(String n, String c, String w, int s){
       System.out.println("It is a tie");
     }
   }
-  public void specialAttack(){
-    
+  public int specialAttack(int a){
+    return weaponStrength + (int)(Math.random() * a) + 1;
   }
 
-  
+  public void setWeaponStrength(int b){
+    weaponStrength = b;
+  }
+  public void setWeaponStrength(){
+    weaponStrength = (int)(Math.random() * 10) + 1;
+  }
+
   // TODO #3: Including a toString() method (see topic 1.15 Strings in the CSAwesome2 textbook) to help with printing out the Superhero details.
   public String toString(){
   // all your code below to create a string with details
