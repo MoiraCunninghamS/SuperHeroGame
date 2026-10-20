@@ -20,6 +20,13 @@ public Superhero(String n, String c, String w){
   life = true;
   weaponStrength = (int) (Math.random() * 10);
 }
+public Superhero(String n){
+  name = n;
+  costume = "unkown";
+  weapon = "unkown";
+  life = true;
+  weaponStrength = (int) (Math.random() * 10);
+}
 public Superhero(String n, String c, String w, int s){
   name = n;
   costume = c;
@@ -27,7 +34,16 @@ public Superhero(String n, String c, String w, int s){
   life = true;
   weaponStrength = s;
 }
+
   // TODO #2: Add missing methods.
+  //get methods
+  public String getName(){
+    return name;
+  }
+  public int getWeaponStrength(){
+    return weaponStrength;
+  }
+  //other methods
   public void loseLife(){
     life = false;
   }
